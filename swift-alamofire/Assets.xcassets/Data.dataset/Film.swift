@@ -44,8 +44,4 @@ extension Film: Displayable {
     var item3: (label: String, value: String) {
         ("RELEASE DATE", releaseDate)
     }
-    
-    var listItems: [String] {
-        starships
-    }
 }

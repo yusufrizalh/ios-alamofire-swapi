@@ -31,11 +31,18 @@ class MainViewController: UITableViewController {
         return indexPath
     }
     
-    // segue untuk berpindah ke detail
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // hanya untuk pindah
         guard let destVC = segue.destination as? DetailViewController else { return }
+        // membawa data
         destVC.data = selectedItem
     }
+    // segue untuk berpindah ke detail
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destVC = segue.destination as? DetailViewController else { return }
+        destVC.data = selectedItem
+    }*/
 
 }
 

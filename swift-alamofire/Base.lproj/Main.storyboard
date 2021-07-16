@@ -106,32 +106,64 @@
                                 <color key="textColor" red="0.00055143148310000001" green="0.030888336369999998" blue="0.33720012630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starships" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef3-dz-Qej">
+                                <rect key="frame" x="20" y="470" width="374" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Nnv-ok-oSz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.00055143148310000001" green="0.030888336369999998" blue="0.33720012630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 3 value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUa-p4-mqp">
                                 <rect key="frame" x="20" y="434" width="374" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.00055143148310000001" green="0.030888336369999998" blue="0.33720012630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5KX-dy-2e6">
+                                <rect key="frame" x="0.0" y="500" width="414" height="386"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="RV8-u3-j0u">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RV8-u3-j0u" id="MWW-JG-W6c">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XtY-64-Npg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5KX-dy-2e6" firstAttribute="top" secondItem="HUa-p4-mqp" secondAttribute="bottom" constant="44" id="1Op-bY-qMR"/>
                             <constraint firstItem="CGc-aD-e3B" firstAttribute="leading" secondItem="XtY-64-Npg" secondAttribute="leading" constant="20" id="4nW-6H-gdu"/>
                             <constraint firstItem="RTv-17-p32" firstAttribute="top" secondItem="lex-GU-yFp" secondAttribute="bottom" constant="20" id="5He-Ii-t1O"/>
                             <constraint firstItem="A7b-t5-B9q" firstAttribute="leading" secondItem="XtY-64-Npg" secondAttribute="leading" constant="20" id="5Uk-zH-MXR"/>
                             <constraint firstItem="lex-GU-yFp" firstAttribute="leading" secondItem="XtY-64-Npg" secondAttribute="leading" constant="20" id="6P2-Ag-e2x"/>
+                            <constraint firstItem="5KX-dy-2e6" firstAttribute="trailing" secondItem="XtY-64-Npg" secondAttribute="trailing" id="7j6-ES-2xg"/>
+                            <constraint firstItem="Ef3-dz-Qej" firstAttribute="top" secondItem="HUa-p4-mqp" secondAttribute="bottom" constant="14" id="8dR-6b-ao7"/>
+                            <constraint firstItem="5KX-dy-2e6" firstAttribute="bottom" secondItem="XtY-64-Npg" secondAttribute="bottom" constant="24" id="95d-9k-dKI"/>
                             <constraint firstItem="RTv-17-p32" firstAttribute="leading" secondItem="XtY-64-Npg" secondAttribute="leading" constant="20" id="A3v-lR-Lhg"/>
                             <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="CGc-aD-e3B" secondAttribute="trailing" constant="20" id="AZB-Sz-dm8"/>
                             <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="lex-GU-yFp" secondAttribute="trailing" constant="20" id="DFQ-S3-TQ3"/>
                             <constraint firstItem="HUa-p4-mqp" firstAttribute="leading" secondItem="XtY-64-Npg" secondAttribute="leading" constant="20" id="E3Y-aJ-oPQ"/>
+                            <constraint firstItem="5KX-dy-2e6" firstAttribute="leading" secondItem="XtY-64-Npg" secondAttribute="leading" id="Ocr-xt-199"/>
+                            <constraint firstItem="Ef3-dz-Qej" firstAttribute="leading" secondItem="HUa-p4-mqp" secondAttribute="leading" id="QVW-Hy-MFM"/>
                             <constraint firstItem="ozo-7Q-0BE" firstAttribute="top" secondItem="RTv-17-p32" secondAttribute="bottom" constant="40" id="UAx-mB-RMs"/>
                             <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="L33-0q-NRg" secondAttribute="trailing" constant="20" id="Vzu-HV-DF1"/>
+                            <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="5KX-dy-2e6" secondAttribute="trailing" id="Yqj-C1-0xp"/>
                             <constraint firstItem="lex-GU-yFp" firstAttribute="top" secondItem="XtY-64-Npg" secondAttribute="top" constant="30" id="aaN-th-GQI"/>
                             <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="ozo-7Q-0BE" secondAttribute="trailing" constant="20" id="aeS-Bi-XK5"/>
                             <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="Tww-sy-7uL" secondAttribute="trailing" constant="20" id="chQ-Ag-iXQ"/>
                             <constraint firstItem="CGc-aD-e3B" firstAttribute="top" secondItem="Tww-sy-7uL" secondAttribute="bottom" constant="15" id="dSf-7P-G5i"/>
+                            <constraint firstItem="XtY-64-Npg" firstAttribute="bottom" secondItem="5KX-dy-2e6" secondAttribute="bottom" constant="-24" id="fkS-N2-GcM"/>
                             <constraint firstItem="A7b-t5-B9q" firstAttribute="top" secondItem="ozo-7Q-0BE" secondAttribute="bottom" constant="15" id="g3n-64-ZbZ"/>
                             <constraint firstItem="HUa-p4-mqp" firstAttribute="top" secondItem="L33-0q-NRg" secondAttribute="bottom" constant="15" id="hv7-QF-Ice"/>
+                            <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="Ef3-dz-Qej" secondAttribute="trailing" constant="20" id="n9A-oG-dWM"/>
                             <constraint firstItem="Tww-sy-7uL" firstAttribute="top" secondItem="A7b-t5-B9q" secondAttribute="bottom" constant="20" id="nCq-8W-hSR"/>
                             <constraint firstItem="L33-0q-NRg" firstAttribute="leading" secondItem="XtY-64-Npg" secondAttribute="leading" constant="20" id="nhm-2v-yS8"/>
                             <constraint firstItem="XtY-64-Npg" firstAttribute="trailing" secondItem="RTv-17-p32" secondAttribute="trailing" constant="20" id="oTk-4k-6Es"/>
@@ -150,7 +182,9 @@
                         <outlet property="item2ValueLabel" destination="CGc-aD-e3B" id="vmk-Fr-cKP"/>
                         <outlet property="item3TitleLabel" destination="L33-0q-NRg" id="jhS-bT-avJ"/>
                         <outlet property="item3ValueLabel" destination="HUa-p4-mqp" id="C1a-BI-DjV"/>
+                        <outlet property="listItems" destination="Ef3-dz-Qej" id="Ypx-a8-v38"/>
                         <outlet property="subtitleLabel" destination="RTv-17-p32" id="e3j-ze-Stw"/>
+                        <outlet property="tableView" destination="5KX-dy-2e6" id="ZGw-pc-kDf"/>
                         <outlet property="titleLabel" destination="lex-GU-yFp" id="OMP-HS-Gyx"/>
                     </connections>
                 </viewController>

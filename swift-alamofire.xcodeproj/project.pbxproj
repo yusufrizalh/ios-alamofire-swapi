@@ -12,12 +12,15 @@
 		284E06D4269FDECF007CB577 /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E06D3269FDECF007CB577 /* Displayable.swift */; };
 		284E06D8269FE0B2007CB577 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E06D7269FE0B2007CB577 /* Films.swift */; };
 		284E06DA269FE94B007CB577 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E06D9269FE94B007CB577 /* MainViewController.swift */; };
+		288BE7E026A1615000D60E6A /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288BE7DF26A1615000D60E6A /* Starship.swift */; };
+		288BE7E226A1678A00D60E6A /* Starships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288BE7E126A1678A00D60E6A /* Starships.swift */; };
 		28C67466269FD797008894EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C67465269FD797008894EB /* AppDelegate.swift */; };
 		28C67468269FD797008894EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C67467269FD797008894EB /* SceneDelegate.swift */; };
 		28C6746D269FD797008894EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C6746B269FD797008894EB /* Main.storyboard */; };
 		28C6746F269FD799008894EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C6746E269FD799008894EB /* Assets.xcassets */; };
 		28C67472269FD799008894EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C67470269FD799008894EB /* LaunchScreen.storyboard */; };
 		28C6747B269FD838008894EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28C6747A269FD838008894EB /* Alamofire */; };
+		28D05E8126A0304E00090AFB /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 28D05E8026A0304E00090AFB /* SwiftyJSON */; };
 		5A71ACCD4EDC6224D73F16CA /* Pods_swift_alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39BD28F8C4F7B2242EAFA05 /* Pods_swift_alamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,8 @@
 		284E06D3269FDECF007CB577 /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
 		284E06D7269FE0B2007CB577 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 		284E06D9269FE94B007CB577 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		288BE7DF26A1615000D60E6A /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		288BE7E126A1678A00D60E6A /* Starships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starships.swift; sourceTree = "<group>"; };
 		28C67462269FD797008894EB /* swift-alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C67465269FD797008894EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C67467269FD797008894EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D05E8126A0304E00090AFB /* SwiftyJSON in Frameworks */,
 				28C6747B269FD838008894EB /* Alamofire in Frameworks */,
 				5A71ACCD4EDC6224D73F16CA /* Pods_swift_alamofire.framework in Frameworks */,
 			);
@@ -73,11 +79,15 @@
 		28C67464269FD797008894EB /* swift-alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				28C67465269FD797008894EB /* AppDelegate.swift */,
-				28C67467269FD797008894EB /* SceneDelegate.swift */,
+				28D05E7C26A01AC900090AFB /* ViewControllers */,
 				284E06D1269FDCA6007CB577 /* Film.swift */,
 				284E06D7269FE0B2007CB577 /* Films.swift */,
+				288BE7DF26A1615000D60E6A /* Starship.swift */,
+				288BE7E126A1678A00D60E6A /* Starships.swift */,
 				284E06D3269FDECF007CB577 /* Displayable.swift */,
+				28D05E7B26A01A9100090AFB /* Models */,
+				28C67465269FD797008894EB /* AppDelegate.swift */,
+				28C67467269FD797008894EB /* SceneDelegate.swift */,
 				28C6746B269FD797008894EB /* Main.storyboard */,
 				284E06D9269FE94B007CB577 /* MainViewController.swift */,
 				284E06CF269FDAA9007CB577 /* DetailViewController.swift */,
@@ -86,6 +96,20 @@
 				28C67473269FD799008894EB /* Info.plist */,
 			);
 			path = "swift-alamofire";
+			sourceTree = "<group>";
+		};
+		28D05E7B26A01A9100090AFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28D05E7C26A01AC900090AFB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		45EB75D1C3DDCA13BC94E8B6 /* Frameworks */ = {
@@ -125,6 +149,7 @@
 			name = "swift-alamofire";
 			packageProductDependencies = (
 				28C6747A269FD838008894EB /* Alamofire */,
+				28D05E8026A0304E00090AFB /* SwiftyJSON */,
 			);
 			productName = "swift-alamofire";
 			productReference = 28C67462269FD797008894EB /* swift-alamofire.app */;
@@ -155,6 +180,7 @@
 			mainGroup = 28C67459269FD797008894EB;
 			packageReferences = (
 				28C67479269FD838008894EB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				28D05E7F26A0304E00090AFB /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 28C67463269FD797008894EB /* Products */;
 			projectDirPath = "";
@@ -230,8 +256,10 @@
 				284E06D8269FE0B2007CB577 /* Films.swift in Sources */,
 				28C67468269FD797008894EB /* SceneDelegate.swift in Sources */,
 				284E06D4269FDECF007CB577 /* Displayable.swift in Sources */,
+				288BE7E226A1678A00D60E6A /* Starships.swift in Sources */,
 				284E06D0269FDAA9007CB577 /* DetailViewController.swift in Sources */,
 				284E06DA269FE94B007CB577 /* MainViewController.swift in Sources */,
+				288BE7E026A1615000D60E6A /* Starship.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +473,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		28D05E7F26A0304E00090AFB /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -452,6 +488,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28C67479269FD838008894EB /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		28D05E8026A0304E00090AFB /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28D05E7F26A0304E00090AFB /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
